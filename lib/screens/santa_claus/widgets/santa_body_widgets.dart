@@ -11,7 +11,7 @@ class SantaBodyWidget extends CustomPainter {
     final paint = Paint()
       ..color = Colors.black
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
+      ..strokeWidth = 5;
 
     canvas.drawArc(rect, startAngle, sweepAngle, false, paint);
 
@@ -21,7 +21,7 @@ class SantaBodyWidget extends CustomPainter {
     final paint1 = Paint()
       ..color = Colors.black
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
+      ..strokeWidth = 5;
 
     canvas.drawArc(rect1, startAngle1, sweepAngle1, false, paint1);
 
@@ -31,7 +31,7 @@ class SantaBodyWidget extends CustomPainter {
     final paint2 = Paint()
       ..color = Colors.black
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
+      ..strokeWidth = 5;
 
     canvas.drawArc(rect2, startAngle2, sweepAngle2, false, paint2);
   }

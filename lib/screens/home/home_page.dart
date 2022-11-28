@@ -69,6 +69,15 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 22),
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, RoutName.flag);
+                },
+                child: const Text(
+                  'Flag UZB',
+                  style: TextStyle(fontSize: 22),
+                ),
+              ),
             ],
           ),
         ),

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class MouthWidget extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    var rect = const Offset(188, 190) & const Size(60, 60);
+    var rect = const Offset(178, 205) & const Size(60, 60);
     const startAngle = pi * 0.1;
     const sweepAngle = pi - 0.6;
     final paint = Paint()

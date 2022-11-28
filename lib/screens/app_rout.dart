@@ -1,5 +1,6 @@
 import 'package:custom_paint_example/screens/average/average_page.dart';
 import 'package:custom_paint_example/screens/bad/bad_page.dart';
+import 'package:custom_paint_example/screens/flag_uzb/flag_page.dart';
 import 'package:custom_paint_example/screens/good/good_page.dart';
 import 'package:custom_paint_example/screens/home/home_page.dart';
 import 'package:custom_paint_example/screens/santa_claus/santa_claus.dart';
@@ -15,8 +16,7 @@ abstract class RoutName {
   static const good = 'good';
   static const veryGood = 'veryGood';
   static const santaClaus = 'santaClaus';
-
-
+  static const flag = 'flag';
 }
 
 class AppRoutes {
@@ -26,7 +26,7 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => TooBadPage());
       case RoutName.bad:
         return MaterialPageRoute(builder: (_) => BadPage());
-        case RoutName.santaClaus:
+      case RoutName.santaClaus:
         return MaterialPageRoute(builder: (_) => SantaClausPage());
       case RoutName.home:
         return MaterialPageRoute(builder: (_) => HomePage());
@@ -34,7 +34,9 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => AveragePage());
       case RoutName.good:
         return MaterialPageRoute(builder: (_) => GoodPage());
-        case RoutName.veryGood:
+      case RoutName.flag:
+        return MaterialPageRoute(builder: (_) => FlagPage());
+      case RoutName.veryGood:
         return MaterialPageRoute(builder: (_) => VeryGoodPage());
       default:
         return MaterialPageRoute(builder: (_) => Scaffold());
